@@ -28,7 +28,8 @@ public class AddUser {
 	}
 
 	public boolean getActive(){
-		return user.isActive();
+//		return user.isActive();
+		return true;
 	}
 
 	public void execute() {
