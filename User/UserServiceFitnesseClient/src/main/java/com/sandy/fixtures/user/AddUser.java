@@ -10,7 +10,7 @@ public class AddUser {
 
 	UserService userService = new UserServiceImpl();
 	private User user;
-	
+
 	public String getUserId() {
 		return userId;
 	}
@@ -27,13 +27,12 @@ public class AddUser {
 		this.password = password;
 	}
 
-	public boolean active(){
-//		return user.isActive();
-		return true;
+	public boolean active() {
+		return null != user ? user.isActive() : false;
 	}
 
 	public void execute() {
 		this.user = userService.createUser(this.userId, this.password);
 	}
-	
+
 }
