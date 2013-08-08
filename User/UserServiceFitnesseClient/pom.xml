@@ -7,4 +7,11 @@
     <relativePath>..</relativePath>
   </parent>
   <artifactId>UserServiceFitnesseClient</artifactId>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.sandy</groupId>
+  		<artifactId>UserService</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
