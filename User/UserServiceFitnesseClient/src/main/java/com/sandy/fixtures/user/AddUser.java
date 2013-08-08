@@ -27,7 +27,7 @@ public class AddUser {
 		this.password = password;
 	}
 
-	public boolean getActive(){
+	public boolean active(){
 //		return user.isActive();
 		return true;
 	}
