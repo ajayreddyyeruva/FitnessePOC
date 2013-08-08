@@ -1,9 +1,16 @@
 package com.sandy.fixtures.user;
 
+import com.sandy.api.UserService;
+import com.sandy.domain.User;
+import com.sandy.impl.UserServiceImpl;
+
 public class AddUser {
 	private String userId;
 	private String password;
 
+	UserService userService = new UserServiceImpl();
+	private User user;
+	
 	public String getUserId() {
 		return userId;
 	}
@@ -20,7 +27,12 @@ public class AddUser {
 		this.password = password;
 	}
 
-	public void execute() {
-		
+	public boolean isActive(){
+		return user.isActive();
 	}
+
+	public void execute() {
+		this.user = userService.createUser(this.userId, this.password);
+	}
+	
 }

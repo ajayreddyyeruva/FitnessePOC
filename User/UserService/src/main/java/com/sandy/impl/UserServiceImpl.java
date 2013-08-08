@@ -8,11 +8,6 @@ import com.sandy.domain.User;
 
 public class UserServiceImpl implements UserService{
 
-	public void createUser(User user) {
-		// TODO Auto-generated method stub
-		
-	}
-
 	public User getUser(String userId) {
 		// TODO Auto-generated method stub
 		return null;
@@ -34,6 +29,11 @@ public class UserServiceImpl implements UserService{
 	}
 
 	public List<User> listUsersCreatedBefore(Date beforeDate) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public User createUser(String userId, String password) {
 		// TODO Auto-generated method stub
 		return null;
 	}

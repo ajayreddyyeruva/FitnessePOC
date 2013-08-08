@@ -7,7 +7,7 @@ import com.sandy.domain.User;
 
 public interface UserService {
 
-	void createUser(User user);
+	User createUser(String userId, String password);
 
 	User getUser(String userId);
 

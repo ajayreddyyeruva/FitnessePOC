@@ -10,6 +10,11 @@ public class User {
 	private Date createdDate = new Date();
 	private Date updatDate = new Date();
 
+	public User(String userId, String password) {
+		this.userId = userId;
+		this.password = password;
+	}
+
 	public String getUserId() {
 		return userId;
 	}
@@ -56,5 +61,6 @@ public class User {
 				+ ", active=" + active + ", createdDate=" + createdDate
 				+ ", updatDate=" + updatDate + "]";
 	}
+
 
 }
