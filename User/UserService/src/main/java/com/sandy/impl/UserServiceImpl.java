@@ -69,6 +69,7 @@ public class UserServiceImpl implements UserService {
 		User user = getUser(userId);
 		if (null != user) {
 			usersMap.remove(userId);
+			userDeleted = true;
 		}
 		return userDeleted;
 	}
