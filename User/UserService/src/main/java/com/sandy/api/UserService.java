@@ -18,4 +18,6 @@ public interface UserService {
 	List<User> listUsersCreatedAfter(Date afterDate);
 
 	List<User> listUsersCreatedBefore(Date beforeDate);
+
+	boolean updateUser(String userId, String password, boolean active);
 }

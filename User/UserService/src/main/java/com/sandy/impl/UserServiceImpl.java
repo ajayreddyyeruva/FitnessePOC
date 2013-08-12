@@ -45,5 +45,17 @@ public class UserServiceImpl implements UserService{
 		usersMap.put(userId, user);
 		return user;
 	}
+	
+	public boolean updateUser(String userId, String password, boolean active) {
+		boolean userUpdated = false;
+		User user = getUser(userId);
+		if (null != user) {
+			user.setPassword(password);
+			user.setActive(active);
+			userUpdated = true;
+		}
+		return userUpdated;
+		
+	}
 
 }
