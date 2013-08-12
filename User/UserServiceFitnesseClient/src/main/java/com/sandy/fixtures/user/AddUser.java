@@ -3,13 +3,13 @@ package com.sandy.fixtures.user;
 import com.sandy.api.UserService;
 import com.sandy.domain.User;
 import com.sandy.exception.UserAlreadyExistsException;
-import com.sandy.factory.ServiceFctory;
+import com.sandy.factory.ServiceFactory;
 
 public class AddUser {
 	private String userId;
 	private String password;
 
-	private UserService userService = ServiceFctory.getUserService();
+	private UserService userService = ServiceFactory.getUserService();
 
 	private User user;
 

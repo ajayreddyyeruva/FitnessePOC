@@ -2,11 +2,11 @@ package com.sandy.fixtures.user;
 
 import com.sandy.api.UserService;
 import com.sandy.domain.User;
-import com.sandy.factory.ServiceFctory;
+import com.sandy.factory.ServiceFactory;
 
 public class UpdateUser {
 
-	private UserService userService = ServiceFctory.getUserService();
+	private UserService userService = ServiceFactory.getUserService();
 	private String userId;
 	private String password;
 	private boolean active;

@@ -1,17 +1,28 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <artifactId>User</artifactId>
-    <groupId>com.sandy</groupId>
-    <version>0.0.1-SNAPSHOT</version>
-    <relativePath>..</relativePath>
-  </parent>
-  <artifactId>UserServiceFitnesseClient</artifactId>
-  <dependencies>
-  	<dependency>
-  		<groupId>com.sandy</groupId>
-  		<artifactId>UserService</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
-  </dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>User</artifactId>
+		<groupId>com.sandy</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>..</relativePath>
+	</parent>
+	<artifactId>UserServiceFitnesseClient</artifactId>
+	<dependencies>
+		<dependency>
+			<groupId>com.sandy</groupId>
+			<artifactId>UserService</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sandy</groupId>
+			<artifactId>QueryResultBuilder</artifactId>
+			<version>1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sandy</groupId>
+			<artifactId>ReflectionUtil</artifactId>
+			<version>1</version>
+		</dependency>
+	</dependencies>
 </project>
