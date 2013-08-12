@@ -20,14 +20,14 @@ public class FetchUserByUserId {
 	}
 	
 	public String userId() {
-		return this.user.getUserId();
+		return this.user == null ? null:this.user.getUserId();
 	}
 
 	public String userPassword() {
-		return this.user.getPassword();
+		return this.user == null ? null:this.user.getPassword();
 	}
 
 	public boolean userActive() {
-		return this.user.isActive();
+		return this.user == null ? null:this.user.isActive();
 	}
 }
