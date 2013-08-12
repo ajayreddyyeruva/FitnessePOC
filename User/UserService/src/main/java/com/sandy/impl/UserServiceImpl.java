@@ -63,5 +63,14 @@ public class UserServiceImpl implements UserService {
 		return userUpdated;
 
 	}
+	
+	public boolean deleteUser(String userId) {
+		boolean userDeleted = false;
+		User user = getUser(userId);
+		if (null != user) {
+			usersMap.remove(userId);
+		}
+		return userDeleted;
+	}
 
 }
