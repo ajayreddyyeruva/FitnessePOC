@@ -20,7 +20,7 @@ public class ListUsersCreatedAfterDate {
 	
 	
 	public List<Object> query() {
-		System.out.println("Fetching users created after %s", startDate);
+		System.out.println("Fetching users created after " + startDate);
 		List<User> users = userService.listUsersCreatedAfter(new Date());
 		
 		QueryResultBuilder builder = new QueryResultBuilder(User.class);
