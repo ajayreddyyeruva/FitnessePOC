@@ -8,24 +8,26 @@ public class FetchUserByUserId {
 
 	private UserService userService = ServiceFctory.getUserService();
 	private User user;
+	private String userId;
 
-	public boolean findUser(String userId) {
-		this.user = userService.getUser(userId);
+	public void setUserId(String userId) {
+		this.userId = userId;
+		
+	}
+	public boolean findUser() {
+		this.user = userService.getUser(this.userId);
 		return this.user != null;
 	}
 	
-	public void setUserId(String userId) {
-
-	}
-	public String getUserId() {
+	public String userId() {
 		return this.user.getUserId();
 	}
 
-	public String getUserPassword() {
+	public String userPassword() {
 		return this.user.getPassword();
 	}
 
-	public boolean isUserActive() {
+	public boolean userActive() {
 		return this.user.isActive();
 	}
 }
