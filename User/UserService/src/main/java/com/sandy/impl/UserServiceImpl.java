@@ -7,6 +7,7 @@ import java.util.Map;
 
 import com.sandy.api.UserService;
 import com.sandy.domain.User;
+import com.sandy.exception.UserAlreadyExistsException;
 
 public class UserServiceImpl implements UserService{
 	
@@ -38,6 +39,9 @@ public class UserServiceImpl implements UserService{
 	}
 
 	public User createUser(String userId, String password) {
+		if(usersMap.containsKey(userId)) {
+			throw new UserAlreadyExistsException("User with userid already exists");
+		}
 		User user = new User(userId, password);
 		usersMap.put(userId, user);
 		return user;

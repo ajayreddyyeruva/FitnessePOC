@@ -2,6 +2,7 @@ package com.sandy.fixtures.user;
 
 import com.sandy.api.UserService;
 import com.sandy.domain.User;
+import com.sandy.exception.UserAlreadyExistsException;
 import com.sandy.impl.UserServiceImpl;
 
 public class AddUser {
@@ -32,9 +33,12 @@ public class AddUser {
 	}
 
 	public boolean created() {
-		this.user = userService.createUser(this.userId, this.password);
+		try {
+			this.user = userService.createUser(this.userId, this.password);
+		} catch (UserAlreadyExistsException e) {
+			return false;
+		}
 		return this.user != null;
 	}
-	
 
 }
