@@ -14,6 +14,9 @@ public class FetchUserByUserId {
 		return this.user != null;
 	}
 	
+	public void setUserId(String userId) {
+
+	}
 	public String getUserId() {
 		return this.user.getUserId();
 	}
