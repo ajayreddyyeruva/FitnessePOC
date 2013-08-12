@@ -31,8 +31,10 @@ public class AddUser {
 		return null != user ? user.isActive() : false;
 	}
 
-	public void execute() {
+	public boolean created() {
 		this.user = userService.createUser(this.userId, this.password);
+		return this.user != null;
 	}
+	
 
 }
