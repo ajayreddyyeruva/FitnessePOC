@@ -28,6 +28,6 @@ public class FetchUserByUserId {
 	}
 
 	public boolean userActive() {
-		return this.user == null ? null:this.user.isActive();
+		return this.user == null ? false:this.user.isActive();
 	}
 }
