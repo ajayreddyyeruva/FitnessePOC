@@ -14,8 +14,7 @@ public class UserServiceImpl implements UserService{
 	Map<String, User> usersMap = new LinkedHashMap<String, User>();
 
 	public User getUser(String userId) {
-		// TODO Auto-generated method stub
-		return null;
+		return usersMap.get(userId);
 	}
 
 	public void activateUser(String userId) {
